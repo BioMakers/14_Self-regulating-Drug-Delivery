@@ -13,23 +13,23 @@ Our goal is to put together a sensor-pump system which would be able to adjust d
 
 ### Contributors
 
-Palaniappan Ganesh Nagappan ![Palani](~Images/Palani-headshot.JPG?raw=true)
+Palaniappan Ganesh Nagappan ![Palani](/wqImages/Palani-headshot.JPG?raw=true)
 David Chong Tian Wei ![David](/Images/David-headshot.png?raw=true)
 
 ## Software
 
 Explain functionality of software components (if any) as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Ideally, this should be pseudo code or an abstract graphical representation of your code e.g entity relationship diagram. Consider adding a screenshot of your User Interface.
 
-**potentiostat-pump-controller.ino (under development)** : Arduino sketch to control potentiostat and pump
-**simulationinfusion.html** : Javascript based simulation of infusion under one compartment model
-**simulationinfusiondevice.html (under development)** : Similar to simulationinfusion.html but additionally the sensor-pump is simulated and options to add noise to sensor readings and delay between infusion and plasma concentration change to be added
+* **potentiostat-pump-controller.ino (under development)** : Arduino sketch to control potentiostat and pump
+* **simulationinfusion.html** : Javascript based simulation of infusion under one compartment model
+* **simulationinfusiondevice.html (under development)** : Similar to simulationinfusion.html but additionally the sensor-pump is simulated and options to add noise to sensor readings and delay between infusion and plasma concentration change to be added
 
 ## Hardware
 
 Explain how the hardware components (if any) of your project function as concisely as possible, including a short description of fabrication and assembly. Component suppliers and part numbers should be provided separately in a bill of materials, in a 'Hardware Folder'.
 
-**electrode-template-v1.svg** : Template for creating stencils to make the gild-on electrodes.
-**electrode-template-v1.odt** : Document formatted with stencil image to print actual size.
+* **electrode-template-v1.svg** : Template for creating stencils to make the gild-on electrodes.
+* **electrode-template-v1.odt** : Document formatted with stencil image to print actual size.
 
 ## Installation, Maintenance and Testing Guide
 
