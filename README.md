@@ -11,10 +11,10 @@ Lastly, follow [these](https://pages.github.com/) instructions if you want to st
 
 Our goal is to put together a sensor-pump system which would be able to adjust drug output of aminoglycosides based on real time sensing of drug in plasma. This would involve several stages, the first being the development of a functional sensor over the appropriate therapeutic range of concentrations. Similarly, a device will be designed which can attach to current hospital drip bags to control output and have configurable parameters for information such as normal drug clearance, volume of distribution, concentration of drug being delivered, and so on. The software to calculate the appropriate output will also be written.
 
-### Contributors
-
-Palaniappan Ganesh Nagappan ![Palani](/Images/Palani-headshot.JPG?raw=true)
-David Chong Tian Wei ![David](/Images/David-headshot.png?raw=true)
+Contributer | Headshot
+------------|-----------
+Palaniappan Ganesh Nagappan | ![Palani](/Images/Palani-headshot.JPG?raw=true)
+David Chong Tian Wei | ![David](/Images/David-headshot.png?raw=true)
 
 ## Software
 
