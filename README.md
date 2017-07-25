@@ -13,7 +13,7 @@ Our goal is to put together a sensor-pump system which would be able to adjust d
 
 ### Contributors
 
-Palaniappan Ganesh Nagappan ![Palani](/wqImages/Palani-headshot.JPG?raw=true)
+Palaniappan Ganesh Nagappan ![Palani](/Images/Palani-headshot.JPG?raw=true)
 David Chong Tian Wei ![David](/Images/David-headshot.png?raw=true)
 
 ## Software
