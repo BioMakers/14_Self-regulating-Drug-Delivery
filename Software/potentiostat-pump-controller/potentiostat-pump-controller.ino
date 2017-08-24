@@ -12,8 +12,8 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   analogWrite(pwmpin, dutycycle);
-  if(rampup) dutycycle++;
-  else dutycycle--;
+  //if(rampup) dutycycle++;
+  //else dutycycle--;
   if(dutycycle >= 255) {
     rampup = false;
     dutycycle = 255;
