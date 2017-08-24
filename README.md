@@ -1,11 +1,3 @@
-Here are some loose guidlines meant to give you an idea of what information we expect to find in each repository. Feel free to present your documentation in the most accessible/suitable order and style but you **must** include project data relating to the headings below, if relevant to your project. Also, include your final proposal in the top directory.
-
-[**A very good example**](https://github.com/Biological-Microsystems-Laboratory/micropipette)
-
-Consider using [GitHub for desktop](https://desktop.github.com/), the user interface and experience is so much better than the web version of Github, in my opinion.
-
-Lastly, follow [these](https://pages.github.com/) instructions if you want to style your github repository into a webpage like [so](https://biomakers.github.io/Example-repo/).
-
 ## Synopsis
 ![](/Images/banner.png?raw=true)
 
@@ -17,20 +9,24 @@ Palaniappan Ganesh Nagappan | ![Palani](/Images/Palani-headshot.JPG?raw=true)
 David Chong Tian Wei | ![David](/Images/David-headshot.png?raw=true)
 
 ## Software
-
-Explain functionality of software components (if any) as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Ideally, this should be pseudo code or an abstract graphical representation of your code e.g entity relationship diagram. Consider adding a screenshot of your User Interface.
-
 * **potentiostat-pump-controller.ino (under development)** : Arduino sketch to control potentiostat and pump
 * **simulationinfusion.html** : Javascript based simulation of infusion under one compartment model
 * **simulationinfusiondevice.html (under development)** : Similar to simulationinfusion.html but additionally the sensor-pump is simulated and options to add noise to sensor readings and delay between infusion and plasma concentration change to be added
 
 ## Hardware
-
-Explain how the hardware components (if any) of your project function as concisely as possible, including a short description of fabrication and assembly. Component suppliers and part numbers should be provided separately in a bill of materials, in a 'Hardware Folder'.
-
-* **electrode-template-v1.svg** : Template for creating stencils to make the gild-on electrodes.
-* **electrode-template-v1.odt** : Document formatted with stencil image to print actual size.
-
+###Electronics
+The electronics part of this project includes the potentiostat and the DC Stepper Motor-Proximity Sensor component of the infusion pump.
+Component | Schematic | Implementation
+----------|-----------|----------------
+Potentiostat Circuit|![](/Hardware/Electronics/potentiostat-circuit-schematics.png)|![](/Hardware/Electronics/potentiostat-circuit-implementation.jpeg)
+###Infusion Pump
+The structure to hold the syringe and apply pressure on the handle
+Component | Schematic | Implementation
+----------|-----------|----------------
+Infusion Pump|![](/Hardware/Infusion Pump/pump-design.png)|![](/Hardware/Infusion Pump/pump-prototype.jpeg)
+###Microfluidic Chip
+The microfluidic chip houses the aptamers immobilised on gold electrodes to sense drug levels. Currently we have only printed the electrodes onto glass slides. The next step will be to seal the two slides to form a channel for fluid to flow through. The stencil design can be found [here](/Hardware/Microfluidic Chip/electrode-template-v1.odt).
+![](/Hardware/Microfluidic Chip/printed-gold-electrodes.jpeg)
 ## Installation, Maintenance and Testing Guide
 
 Provide instructions on usage, describe a test scheme and show how to run the tests with code and hardware configuration examples with some representative results.
