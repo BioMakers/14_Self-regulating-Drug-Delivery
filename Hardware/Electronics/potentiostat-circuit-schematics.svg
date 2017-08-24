@@ -29,8 +29,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="480.11951"
-     inkscape:cy="1121.9731"
+     inkscape:cx="761.48695"
+     inkscape:cy="952.87319"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1586,7 +1586,7 @@
        inkscape:connector-curvature="0" />
     <g
        id="g5670"
-       transform="translate(139.40105,-165.64471)">
+       transform="translate(197.98981,-160.59395)">
       <rect
          y="156.35686"
          x="725.28955"
@@ -1700,11 +1700,6 @@
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 897.01546,117.97106 23.23351,1.01015 0,66.67007 -19.1929,0"
        id="path5705"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 926.30988,4.83397 21.21321,0 1.01015,53.53809 -19.1929,-1.01015"
-       id="path5707"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -2180,5 +2175,46 @@
          x="698.01544"
          y="836.75671"
          id="tspan3711">Black lines indicate soldered connections</tspan></text>
+    <g
+       id="g5622-3"
+       transform="translate(79.761244,-341.43156)">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 785.26738,332.78746 1.01015,28.28427"
+         id="path3865-15-4-6"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 795.87398,332.78746 1.01015,28.28427"
+         id="path3865-6-9-6-75"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="778.19629"
+         y="378.26459"
+         id="text4682-84-9-3"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4684-8-2-56"
+           x="778.19629"
+           y="378.26459"
+           style="font-size:12.5px">10nF</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 877.82256,5.8441 22.22336,0 0,-36.36549"
+       id="path3737"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 900.04592,4.83395 21.2132,0"
+       id="path3739"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 982.87843,6.85426 23.23347,-1.01016 0,53.53809 -76.77156,0"
+       id="path3741"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
