@@ -18,15 +18,15 @@ David Chong Tian Wei | ![David](/Images/David-headshot.png?raw=true)
 The electronics part of this project includes the potentiostat and the DC Stepper Motor-Proximity Sensor component of the infusion pump.
 Component | Schematic | Implementation
 ----------|-----------|----------------
-Potentiostat Circuit|![](/Hardware/Electronics/potentiostat-circuit-schematics.png) | ![](/Hardware/Electronics/potentiostat-circuit-implementation.jpeg)
+Potentiostat Circuit | ![](/Hardware/Electronics/potentiostat-circuit-schematics.png?raw=true) | ![](/Hardware/Electronics/potentiostat-circuit-implementation.jpeg?raw=true)
 ### Infusion Pump
 The structure to hold the syringe and apply pressure on the handle
 Component | Schematic | Implementation
 ----------|-----------|----------------
-Infusion Pump|![](/Hardware/Infusion Pump/pump-design.png) | ![](/Hardware/Infusion Pump/pump-prototype.jpeg)
+Infusion Pump | ![](/Hardware/Infusion%20Pump/pump-design.png?raw=true) | ![](/Hardware/Infusion%20Pump/pump-prototype.jpeg?raw=true)
 ### Microfluidic Chip
-The microfluidic chip houses the aptamers immobilised on gold electrodes to sense drug levels. Currently we have only printed the electrodes onto glass slides. The next step will be to seal the two slides to form a channel for fluid to flow through. The stencil design can be found [here](/Hardware/Microfluidic Chip/electrode-template-v1.odt).
-![](/Hardware/Microfluidic Chip/printed-gold-electrodes.jpeg)
+The microfluidic chip houses the aptamers immobilised on gold electrodes to sense drug levels. Currently we have only printed the electrodes onto glass slides. The next step will be to seal the two slides to form a channel for fluid to flow through. The stencil design can be found [here](/Hardware/Microfluidic%20Chip/electrode-template-v1.odt).
+![](/Hardware/Microfluidic%20Chip/printed-gold-electrodes.jpeg?raw=true)
 ## Installation, Maintenance and Testing Guide
 
 Provide instructions on usage, describe a test scheme and show how to run the tests with code and hardware configuration examples with some representative results.
