@@ -14,17 +14,17 @@ David Chong Tian Wei | ![David](/Images/David-headshot.png?raw=true)
 * **simulationinfusiondevice.html (under development)** : Similar to simulationinfusion.html but additionally the sensor-pump is simulated and options to add noise to sensor readings and delay between infusion and plasma concentration change to be added
 
 ## Hardware
-###Electronics
+### Electronics
 The electronics part of this project includes the potentiostat and the DC Stepper Motor-Proximity Sensor component of the infusion pump.
 Component | Schematic | Implementation
 ----------|-----------|----------------
-Potentiostat Circuit|![](/Hardware/Electronics/potentiostat-circuit-schematics.png)|![](/Hardware/Electronics/potentiostat-circuit-implementation.jpeg)
-###Infusion Pump
+Potentiostat Circuit|![](/Hardware/Electronics/potentiostat-circuit-schematics.png) | ![](/Hardware/Electronics/potentiostat-circuit-implementation.jpeg)
+### Infusion Pump
 The structure to hold the syringe and apply pressure on the handle
 Component | Schematic | Implementation
 ----------|-----------|----------------
-Infusion Pump|![](/Hardware/Infusion Pump/pump-design.png)|![](/Hardware/Infusion Pump/pump-prototype.jpeg)
-###Microfluidic Chip
+Infusion Pump|![](/Hardware/Infusion Pump/pump-design.png) | ![](/Hardware/Infusion Pump/pump-prototype.jpeg)
+### Microfluidic Chip
 The microfluidic chip houses the aptamers immobilised on gold electrodes to sense drug levels. Currently we have only printed the electrodes onto glass slides. The next step will be to seal the two slides to form a channel for fluid to flow through. The stencil design can be found [here](/Hardware/Microfluidic Chip/electrode-template-v1.odt).
 ![](/Hardware/Microfluidic Chip/printed-gold-electrodes.jpeg)
 ## Installation, Maintenance and Testing Guide
