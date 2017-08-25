@@ -1,29 +1,73 @@
-const int pwmpin = 5;
-const int apin = A0;
+#include <Wire.h>
+#define DAC_ADD 0x48 // Digital to Analog Converter Address for I2C communication
+#define DAC_DATA_REG 0x00 // Data Register address of DAC for I2C communication
+#define PROX_ADD 0x60 // Proximity sensor address for I2C communication
+#define ALS_CONF 0x00 // Ambient Light Sensor Config Register address for Proximity sensor address for I2C communication
+#define ALS_REG 0x09 // Ambient Light Sensor Data Register for Proximity sensor address for I2C communication
 
-int sensorval = 0;
-int dutycycle = 255;
-bool rampup = true;
+//Flow control variables
+const int REST = 0;
+int func = 0;
+byte commandbuffer[5];
+
+//Potentiostat Sweep Variables
+const int SWEEP = 1;
+int DACLevel = 0; //range from 0-255
+int DACMax = 255; //range from 0-255
+int DACMin = 0; //range from 0-255
+int DACDelay = 0; //in milliseconds
+int DACIncreasing = true;
+
+//Pin Values
+int TSA5017in1 = 12;
+int TSA5017in2 = 13;
+
+//Potentiostat Sweep
+int runSweep() {
+  Wire.beginTransmission(DAC_ADD);
+  Wire.write(DAC_DATA_REG);
+  Wire.write(DACLevel);
+  Wire.endTransmission();
+  int sensorval = analogRead(A3);
+  float voltage = (sensorval / 1023.0 * 5.0);
+  float current = voltage / 10000.0;
+  Serial.print(DACLevel / 256.0 * 3.3,3);
+  Serial.print(" ");
+  Serial.print((float)(voltage-1.024)/10000.0,10);
+  Serial.print("\n");
+  if(DACIncreasing) DACLevel++;
+  else DACLevel--;
+  if(DACLevel == DACMax || DACLevel == DACMin) func = 0;
+  delay(DACDelay);
+}
+
+boolean increasing = true;
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
+  pinMode(TSA5017in1, OUTPUT);
+  pinMode(TSA5017in2, OUTPUT);
+  Wire.begin();
+  digitalWrite(TSA5017in1,LOW);
+  digitalWrite(TSA5017in2,LOW);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  analogWrite(pwmpin, dutycycle);
-  //if(rampup) dutycycle++;
-  //else dutycycle--;
-  if(dutycycle >= 255) {
-    rampup = false;
-    dutycycle = 255;
+  //Check input from serial
+  if(Serial.available()) {
+    Serial.readBytes(commandbuffer,5);
+    func = commandbuffer[0];
+    switch(func) {
+      case SWEEP:
+        DACMax = commandbuffer[1];
+        DACMin = commandbuffer[2];
+        DACIncreasing = (commandbuffer[3] == byte(0)) ? true : false;
+        DACDelay = commandbuffer[4];
+        DACLevel = (DACIncreasing) ? DACMin : DACMax;
+        break;
+      default:
+        break;
+    }
   }
-  if(dutycycle <= 0) {
-    rampup = true;
-    dutycycle = 0;
-  }
-  sensorval = analogRead(apin);
-  float voltage = sensorval * (5.0 / 1023.0);
-  Serial.println(voltage);
-  delay(4);
+  if(func == SWEEP) runSweep();
 }

@@ -9,9 +9,12 @@ Palaniappan Ganesh Nagappan | ![Palani](/Images/Palani-headshot.JPG?raw=true)
 David Chong Tian Wei | ![David](/Images/David-headshot.png?raw=true)
 
 ## Software
-* **potentiostat-pump-controller.ino (under development)** : Arduino sketch to control potentiostat and pump
-* **simulationinfusion.html** : Javascript based simulation of infusion under one compartment model
-* **simulationinfusiondevice.html (under development)** : Similar to simulationinfusion.html but additionally the sensor-pump is simulated and options to add noise to sensor readings and delay between infusion and plasma concentration change to be added
+Software will be needed to control the arduino uno unit that is controlling the potentiostat circuit and the feedback circuit to control the pump. Several supporting software such as a desktop GUI to display data from the potentiostat and simulations will also be written
+<table>
+<tr><th>Software</th><th>Example</th></tr>
+<tr><td><a href="/Software/potentiostat-pump-controller.ino">Arduino Controller Software</a></td><td><img src="/Software/DesktopPotentiostatGuiPrototype.png" width=300></td></tr>
+<tr><td><a href="/Software/simulationinfusiondevice.html">Simulation of infusion pump sensor feedback loop using single compartment model</a></td><td></td></tr>
+</table>
 
 ## Hardware
 ### Electronics
