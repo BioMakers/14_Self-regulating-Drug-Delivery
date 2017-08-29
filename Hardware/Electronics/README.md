@@ -2,7 +2,7 @@
 
 ## Overview and Disclaimer
 
-This potentiostat circuit was adapted from the [UC Davis 2014 iGEM team's design](http://2014.igem.org/Team:UC_Davis/Potentiostat_Design). This component is used to read set the voltage for the aptamer sensor in the microfluidic chip and to read in the current from the sensor. As both of us working on this project do not have any electronics background, there are likely errors int his adaptation. However, an adaptation was necessary in order to utilise the materials available to us such as the arduino uno. Furthermore, this meant we could not print out the PCB design and instead built it manually through **surface mount soldering**. This adaptation has several components
+This potentiostat circuit was adapted from the [UC Davis 2014 iGEM team's design](http://2014.igem.org/Team:UC_Davis/Potentiostat_Design). This component is used to set the voltage for the aptamer sensor in the microfluidic chip and to read in the current from the sensor. As both of us working on this project do not have any electronics background, there are likely errors int his adaptation. However, an adaptation was necessary in order to utilise the materials available to us such as the arduino uno. Furthermore, this meant we could not print out the PCB design and instead built it manually through **surface mount soldering**. This adaptation has several components
 
 1. Unity gain op-amp for reference electrode
 2. Transimpedance amplifier for working electrode
