@@ -37,6 +37,11 @@ The structure to hold the syringe and apply pressure on the handle
 
 ### Microfluidic Chip
 The microfluidic chip houses the aptamers immobilised on gold electrodes to sense drug levels. Currently we have only printed the electrodes onto glass slides. The next step will be to seal the two slides to form a channel for fluid to flow through. The stencil design can be found [here](/Hardware/Microfluidic%20Chip/electrode-template-v1.odt).
+<table>
+<tr><th>Component</th><th>Image</th></tr>
+<tr><td>Printed Electrodes</td><td><img src="/Hardware/Microfluidic Chip/printed-gold-electrodes.jpeg" width="300"></td></tr>
+<tr><td>Combined Chip </td><td><img src="/Hardware/Microfluidic Chip/microfluidicprototype1.jpeg" width="300"></td></tr>
+</table>
 ![](/Hardware/Microfluidic%20Chip/printed-gold-electrodes.jpeg?raw=true)
 ## Installation, Maintenance and Testing Guide
 
