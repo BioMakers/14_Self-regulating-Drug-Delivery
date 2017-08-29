@@ -24,7 +24,7 @@ The electronics part of this project includes the potentiostat and the DC Steppe
 
 <table>
 <tr><th>Component</th><th>Schematic</th><th>Implementation</th></tr>
-<tr><td>Potentiostat Circuit</td><td><img src="/Hardware/Electronics/potentiostat-circuit-schematics.png" width=300></td><td><img src="/Hardware/Electronics/potentiostat-circuit-implementation.jpeg" width=300></td></tr>
+<tr><td>Potentiostat Circuit (<a href='http://2014.igem.org/Team:UC_Davis/Potentiostat_Design'>adapted from UC Davis iGEM team 2014 OliView 2.0 Schematic</a>)</td><td><img src="/Hardware/Electronics/potentiostat-circuit-schematics.png" width=300></td><td><img src="/Hardware/Electronics/potentiostat-circuit-implementation.jpeg" width=300></td></tr>
 </table>
 
 ### Infusion Pump
