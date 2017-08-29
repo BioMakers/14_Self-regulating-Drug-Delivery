@@ -43,7 +43,7 @@ There are 2 methods which can be used to print the electrodes. One involves usin
 8. Once all parts of the gold size have been covered, press firmly with the popsicle stick/flat surface to secure the gold leaf.
 9. Brush off excess gold leaf and scrape of excess flakes which may have stuck onto other areas.
 
-![](/printed-gold-electrodes.jpeg?raw=true)
+![](printed-gold-electrodes.jpeg?raw=true)
 
 ## Aptamer Immobilisation Protocol(incomplete)
 The aptamer protocol is adapted from the one used [here](https://www.nature.com/nprot/journal/v2/n11/full/nprot.2007.413.html). We are unsure if this will work as it is designed for industrial grade gold electrodes and we do not have the resources to copy this protocol completely. Furthermore, we do not think we can polish our electrodes given they are quite fragile as they are printed rather than being a solid gold rod. As such we skipped the polishing step completely.
@@ -105,4 +105,4 @@ Multimeter |  |  | 1
 11. Seal the two glass slides together with epoxy to form the channel, ensuring the areas around the needles are sealed to prevent leakage.
 12. After drying, test if the channel is sealed properly by flushing Phosphate Buffered Saline with red food coloring through the channel.
 
-![](microfluidicprototype.jpeg)
+![](microfluidicprototype1.jpeg?raw=true)
