@@ -57,5 +57,5 @@ As mentioned above, the circuit was implemented through surface mount soldering 
 ![](potentiostat-circuit-implementation.jpeg?raw=true)
 
 ## Related Material
-1. [Software to control the arduino](../../Software/potentiostat-pump-controller/potentiostat-pump/controller.ino)
+1. [Software to control the arduino](../../Software/potentiostat-pump-controller/potentiostat-pump-controller.ino)
 2. [Desktop software to view output](../../Software/potentiostat-gui.py)
