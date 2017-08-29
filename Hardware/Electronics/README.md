@@ -42,6 +42,7 @@ Description | Part No. | Supplier | Quantity
 ----------- | -------- | -------- | ---------
 Lead Free Solder 0.5mm Diam 100g | 555-282 | RS Components | 1
 Soldering Iron 25W |  |  | 1
+Precision Tweezers |  |  | 1
 Multicore Pen 9g Solder Flux | 425-9379 | RS Components | 1
 Arduino Uno | DEV-0231 | SgBotic | 1
 1.8m USB A to B cable | CAB-00307 | SgBotic | 1
