@@ -42,7 +42,7 @@ The microfluidic chip houses the aptamers immobilised on gold electrodes to sens
 <tr><td>Printed Electrodes</td><td><img src="/Hardware/Microfluidic Chip/printed-gold-electrodes.jpeg" width="300"></td></tr>
 <tr><td>Combined Chip </td><td><img src="/Hardware/Microfluidic Chip/microfluidicprototype1.jpeg" width="300"></td></tr>
 </table>
-![](/Hardware/Microfluidic%20Chip/printed-gold-electrodes.jpeg?raw=true)
+
 ## Installation, Maintenance and Testing Guide
 
 Provide instructions on usage, describe a test scheme and show how to run the tests with code and hardware configuration examples with some representative results.
