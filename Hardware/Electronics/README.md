@@ -3,12 +3,14 @@
 ## Overview and Disclaimer
 
 This potentiostat circuit was adapted from the [UC Davis 2014 iGEM team's design](http://2014.igem.org/Team:UC_Davis/Potentiostat_Design). This component is used to read set the voltage for the aptamer sensor in the microfluidic chip and to read in the current from the sensor. As both of us working on this project do not have any electronics background, there are likely errors int his adaptation. However, an adaptation was necessary in order to utilise the materials available to us such as the arduino uno. Furthermore, this meant we could not print out the PCB design and instead built it manually through **surface mount soldering**. This adaptation has several components
+
 1. Unity gain op-amp for reference electrode
 2. Transimpedance amplifier for working electrode
-3. Control amp maintaining voltage at coutner electrode
+3. Control amp maintaining voltage at counter electrode
 4. Gain Switch
 5. Sallen-Key Low Pass Filter
-Currently the first three components seem to work, but the low pass filter does not seem to be functioning properly.
+
+Currently the first three components seem to work, but the low pass filter does not seem to be functioning properly. Additionally, the 2.048 shunt voltage reference has not been added yet.
 
 ## Materials
 
@@ -53,3 +55,7 @@ As mentioned above, the circuit was implemented through surface mount soldering 
 ![](potentiostat-circuit-schematics.png?raw=true)
 ### Implementation
 ![](potentiostat-circuit-implementation.jpeg?raw=true)
+
+## Related Material
+1. [Software to control the arduino](../../Software/potentiostat-pump-controller/potentiostat-pump/controller.ino)
+2. [Desktop software to view output](../../Software/potentiostat-gui.py)
