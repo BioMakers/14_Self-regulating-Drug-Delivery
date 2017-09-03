@@ -15,7 +15,7 @@ Software will be needed to control the arduino uno unit that is controlling the 
 <tr><th>Software</th><th>Example</th></tr>
 <tr><td><a href="/Software/potentiostat-pump-controller/potentiostat-pump-controller.ino">Arduino Controller Software</a></td><td></td></tr>
 <tr><td><a href="/Software/potentiostat-gui.py">Desktop App to control and view the arduino</a></td><td><img src="/Software/DesktopPotentiostatGuiPrototype.png" width=300></td></tr>
-<tr><td><a href="/Software/simulationinfusiondevice.html">Simulation of infusion pump sensor feedback loop using single compartment model</a></td><td></td></tr>
+<tr><td><a href="/Software/infusionsimulation.R">Simulation of infusion pump sensor feedback loop using single compartment model</a></td><td></td></tr>
 </table>
 
 ## Hardware
