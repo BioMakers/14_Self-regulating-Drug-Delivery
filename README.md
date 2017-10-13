@@ -49,6 +49,7 @@ The microfluidic chip houses the aptamers immobilised on gold electrodes to sens
 <tr><th>Description</th><th>Image</th></tr>
 <tr><td>Potentiostat attached to microfluidic chip</td><td><img src="/Images/Potentiostat_Microfluidic_Chip_Setup.jpeg" width="300"></td></tr>
 <tr><td>Potentiostat sweep using microfluidic chip with printed plain gold electrodes and Phosphate Buffered Saline</td><td><img src="/Images/PotentiostatPBSAuElectrodeCycle.png" width="300"></td></tr>
+<tr><td>Potentiostat dry cell test with 10kOhm resistor</td><td><img src="/Images/Potentiostat_Resistor_Test.jpeg" width="300"></td></tr>
 </table>
 
 ## Installation, Maintenance and Testing Guide
