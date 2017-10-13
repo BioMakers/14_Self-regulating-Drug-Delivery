@@ -1,5 +1,7 @@
 tceil <- 5 # uM
-tfloor <- 1 # uM
+tfloor <- 3 # uM
+trange <- tceil-tfloor
+maxinf <- 1
 
 VdperKg <- 0.33 # L/Kg
 thalf <- 2.2 # hr
@@ -17,7 +19,7 @@ perturb <- function(input) {
 
 loadingdose <- function() {
   totalmol <- (tceil + tfloor) / 2 * PatientMass * VdperKg
-  infrate <- totalmol / InfusionConc / inter * 1000 * 3600
+  infrate <- totalmol / InfusionConc * inter / 3600 * 1000 #ml / interval (s)
   return(infrate)
 }
 
@@ -27,14 +29,14 @@ chiou <- function(inf,Vd,c1,c2,t1,t2) {
 }
 
 iter <- function(data,clearances) {
-  time <- data[1]
-  drugmol <- data[2]
-  drugconc <- data[3]
-  senseddrugconc <- data[4]
-  infrate <- data[5]
+  time <- data[nrow(data),1]
+  drugmol <- data[nrow(data),2]
+  drugconc <- data[nrow(data),3]
+  senseddrugconc <- data[nrow(data),4]
+  infrate <- data[nrow(data),5]
   
   time2 <- time + inter
-  drugmol2 <- drugmol + ((infrate / 1000) * (inter / 3600) * InfusionConc) # ml/hr s mol/L
+  drugmol2 <- drugmol + ((infrate / 1000) * InfusionConc) # ml/hr s mol/L
   maxdrugconc <- drugmol2 / (VdperKg * PatientMass)
   avgdrugconc <- (drugconc + maxdrugconc) / 2
   drugmol2 <- drugmol2 - ((PatientClearance / 1000) * (inter / 60) * avgdrugconc) # ml/min s mol/L
@@ -42,23 +44,42 @@ iter <- function(data,clearances) {
   senseddrugconc2 <- perturb(drugconc2)
   
   calculatedclearance <- chiou(infrate,VdperKg * PatientMass,senseddrugconc,senseddrugconc2,time,time2)
-  if(length(clearances) < 24) {
-    infrate2 <- (tceil + tfloor) / 2 * calculatedclearance / InfusionConc * 3600 * 1000
+  if(length(clearances) < 3600 / inter) {
+    infrate2 <- infrate
+    #infrate2 <- (tceil + tfloor) / 2 * calculatedclearance / InfusionConc * inter / 3600 * 1000
+    #if(infrate2 < 0) infrate2 <- infrate
     return(c(time2,drugmol2,drugconc2,senseddrugconc2,infrate2, calculatedclearance / InfusionConc * 3600 * 1000))  
   }
   else {
-    infrate2 <- (tceil + tfloor) / 2 * mean(clearances) / InfusionConc * 3600 * 1000
-    return(c(time2,drugmol2,drugconc2,senseddrugconc2,infrate2, mean(clearances) / InfusionConc * 3600 * 1000))  
+    if(abs((tceil + tfloor)/2 - senseddrugconc2) > trange/4) {
+      infrate2 <- infrate * ((tceil + tfloor) / 2) / senseddrugconc2
+      calculatedclearance <- infrate2 * 2 / (tceil + tfloor) * InfusionConc * 3600 / 1000 / inter
+    }
+    else if (sd(data$senseddrugconc[(nrow(data)-(3600/inter)):nrow(data)]) < 0.6) {
+      infrate2 <- infrate
+    }
+    else {
+      infrate2 <- (tceil + tfloor) / 2 * mean(clearances) / InfusionConc * inter / 3600 * 1000
+    }
+    if(infrate2 < 0) infrate2 <- infrate
+    return(c(time2,drugmol2,drugconc2,senseddrugconc2,infrate2, calculatedclearance / InfusionConc * 3600 * 1000))  
   }
 }
 
 data <- data.frame(matrix(c(0,0,0,0,loadingdose(),0),1,6))
 names(data) <- c("time","drugmol","drugconc","senseddrugconc","infrate","calculatedclearance")
 for (i in seq(1,500)) {
-  data <- rbind(data, unlist(iter(data[i,],clearances)))
+  data <- rbind(data, unlist(iter(data,clearances)))
   if(i > 1) clearances <- c(clearances,data[i,6] * InfusionConc /3600 / 1000)
 }
-plot(x=data$time,y=data$drugconc)
-lines(x=data$time,y=data$drugconc)
+png("Simulation.png")
+plot(x=data$time/3600,y=data$drugconc, main="Simulation of plasma drug level control using \nnegative feedback algorithm", ylab="Drug Concentration (uM)", xlab="Time (hr)")
+lines(x=data$time/3600,y=data$drugconc)
+points(x=data$time/3600,y=data$senseddrugconc,col="red")
+lines(x=data$time/3600,y=data$senseddrugconc,col="red")
 abline(h=tceil)
 abline(h=tfloor)
+legend(x=10,y=2,col=c("black","red"),legend=c("Actual Drug Conc", "Sensed Drug Conc"), pch=c(1,1))
+dev.off()
+print(paste("Percentage of time within window: ", sum((data$drugconc <= tceil) & (data$drugconc >= tfloor)) / nrow(data)))
+print(range(data$infrate))

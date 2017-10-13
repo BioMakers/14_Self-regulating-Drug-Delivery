@@ -63,9 +63,9 @@ def updateDisplay():
             if mincur == None:
                 mincur = i[1]
             elif mincur > i[1]:
-                mincur == i[1]
-        maxcur = maxcur * 1.2 + 0.000001
-        mincur = mincur * 1.2 - 0.000001
+                mincur = i[1]
+        #maxcur = maxcur * 1.2 + 0.000001
+        #mincur = mincur * 1.2 - 0.000001
         currange = maxcur - mincur
         for i in range(0,18):
             Display.create_line(0.065 * DISPLAY_WIDTH, (0.05 * (18-i) + 0.025) * DISPLAY_HEIGHT,
@@ -74,10 +74,11 @@ def updateDisplay():
             Display.create_text(0.04 * DISPLAY_WIDTH, (0.05 * (18-i) + 0.025) * DISPLAY_HEIGHT,
                                 text=str(round(mincur + currange / 17.0 * i,6)))
         for i in range(1,len(datapoints)):
-            Display.create_line(((datapoints[i-1][0] / 2.048) * 0.85 + 0.1) * DISPLAY_WIDTH,
-                            ((currange - datapoints[i-1][1] + mincur) / currange + 0.025) * DISPLAY_HEIGHT,
+            if currange > 0:
+                Display.create_line(((datapoints[i-1][0] / 2.048) * 0.85 + 0.1) * DISPLAY_WIDTH,
+                            ((currange - datapoints[i-1][1] + mincur) / currange + 0.08) * DISPLAY_HEIGHT * 0.85,
                             ((datapoints[i][0] / 2.048) * 0.85 + 0.1) * DISPLAY_WIDTH,
-                            ((currange - datapoints[i][1] + mincur) / currange + 0.025) * DISPLAY_HEIGHT,
+                            ((currange - datapoints[i][1] + mincur) / currange + 0.08) * DISPLAY_HEIGHT * 0.85,
                                 width=0)
 
 

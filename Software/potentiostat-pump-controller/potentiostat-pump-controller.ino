@@ -17,6 +17,7 @@ int DACMax = 255; //range from 0-255
 int DACMin = 0; //range from 0-255
 int DACDelay = 0; //in milliseconds
 int DACIncreasing = true;
+float resistanceused = 10000;
 
 //Pin Values
 int TSA5017in1 = 12;
@@ -28,12 +29,12 @@ int runSweep() {
   Wire.write(DAC_DATA_REG);
   Wire.write(DACLevel);
   Wire.endTransmission();
-  int sensorval = analogRead(A3);
+  int sensorval = analogRead(A0);
   float voltage = (sensorval / 1023.0 * 5.0);
-  float current = voltage / 10000.0;
+  float current = voltage / resistanceused;
   Serial.print(DACLevel / 256.0 * 3.3,3);
   Serial.print(" ");
-  Serial.print((float)(voltage-1.024)/10000.0,10);
+  Serial.print((float)(voltage-1.024)/resistanceused,10);
   Serial.print("\n");
   if(DACIncreasing) DACLevel++;
   else DACLevel--;

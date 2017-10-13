@@ -15,7 +15,7 @@ Software will be needed to control the arduino uno unit that is controlling the 
 <tr><th>Software</th><th>Example</th></tr>
 <tr><td><a href="/Software/potentiostat-pump-controller/potentiostat-pump-controller.ino">Arduino Controller Software</a></td><td></td></tr>
 <tr><td><a href="/Software/potentiostat-gui.py">Desktop App to control and view the arduino</a></td><td><img src="/Software/DesktopPotentiostatGuiPrototype.png" width=300></td></tr>
-<tr><td><a href="/Software/infusionsimulation.R">Simulation of infusion pump sensor feedback loop using single compartment model</a></td><td></td></tr>
+<tr><td><a href="/Software/infusionsimulation.R">Simulation of infusion pump sensor feedback loop using single compartment model</a></td><td><img src="/Software/Simulation.png" width="300"></td></tr>
 </table>
 
 ## Hardware
@@ -40,9 +40,16 @@ The microfluidic chip houses the aptamers immobilised on gold electrodes to sens
 <table>
 <tr><th>Component</th><th>Image</th></tr>
 <tr><td>Printed Electrodes</td><td><img src="/Hardware/Microfluidic Chip/printed-gold-electrodes.jpeg" width="300"></td></tr>
-<tr><td>Combined Chip </td><td><img src="/Hardware/Microfluidic Chip/microfluidicprototype1.jpeg" width="300"></td></tr>
+<tr><td>Combined Chip using OHP sheets </td><td><img src="/Hardware/Microfluidic Chip/microfluidicprototype1.jpeg" width="300"></td></tr>
+<tr><td>Combined Chip using Glass Slides</td><td><img src="/Hardware/Microfluidic Chip/microfluidicprototype2.jpeg" width="300"></td></tr>
 </table>
 
+## Integrated Parts
+<table>
+<tr><th>Description</th><th>Image</th></tr>
+<tr><td>Potentiostat attached to microfluidic chip</td><td><img src="/Images/Potentiostat_Microfluidic_Chip_Setup.jpeg" width="300"></td></tr>
+<tr><td>Potentiostat sweep using microfluidic chip with printed plain gold electrodes and Phosphate Buffered Saline</td><td><img src="/Images/PotentiostatPBSAuElectrodeCycle.png" width="300"></td></tr>
+</table>
 ## Installation, Maintenance and Testing Guide
 
 Provide instructions on usage, describe a test scheme and show how to run the tests with code and hardware configuration examples with some representative results.

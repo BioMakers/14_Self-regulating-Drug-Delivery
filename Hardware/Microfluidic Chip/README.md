@@ -59,6 +59,7 @@ Phosphate Buffered Saline pH 7.2 | 806544 | Sigma Aldrich |
 Magnesium Chloride Solution 1M | M1028 | Sigma Aldrich | 
 Tris-(2-carboxyethyl)phosphine hydrochloride solution | 646547 | Sigma Aldrich | 
 Deionised Water |  |  | 
+Printed Gold-leaf Electrode Chip (as described in section above) |  |  | 
 
 ### Equipment
 Description | Part Number | Supplier | Quantity
@@ -67,7 +68,7 @@ Micropipette |  |  | 1
 Fume cupboard |  |  | 1
 
 ### Method
-Placeholder
+1. 
 
 ## Combining the Layers
 
