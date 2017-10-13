@@ -50,6 +50,7 @@ The microfluidic chip houses the aptamers immobilised on gold electrodes to sens
 <tr><td>Potentiostat attached to microfluidic chip</td><td><img src="/Images/Potentiostat_Microfluidic_Chip_Setup.jpeg" width="300"></td></tr>
 <tr><td>Potentiostat sweep using microfluidic chip with printed plain gold electrodes and Phosphate Buffered Saline</td><td><img src="/Images/PotentiostatPBSAuElectrodeCycle.png" width="300"></td></tr>
 </table>
+
 ## Installation, Maintenance and Testing Guide
 
 Provide instructions on usage, describe a test scheme and show how to run the tests with code and hardware configuration examples with some representative results.
