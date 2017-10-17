@@ -32,7 +32,7 @@ def runSweep():
     current_connection.write(bytes(command))
 
 def runCycle():
-    a = 0
+    a = 0s
 
 def updateDisplay():
     Display.delete(Tk.ALL)
