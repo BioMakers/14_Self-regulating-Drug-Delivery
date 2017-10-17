@@ -54,9 +54,30 @@ The microfluidic chip houses the aptamers immobilised on gold electrodes to sens
 
 ## Installation, Maintenance and Testing Guide
 
-Provide instructions on usage, describe a test scheme and show how to run the tests with code and hardware configuration examples with some representative results.
+### Potentiostat Interface Software
+The interface uses the following software: python2, Tkinter, serial, io
+
+### Potentiostat Dry Cell Test
+1. Once you constructed the potentiostat circuit and connected it to the arduino according to the schematics, upload the potentiostat-controller sketch onto the arduino. 
+2. Connect the Counter and Reference electrodes to one side of a 10kOhm resistor and the working electrode to the other side to complete the circuit.
+3. Run the potentiostat interface software and connect to the appropriate device and run a sweep with default settings. The result should be something similar to the Potentiostat dry cell test with 10kOhm resistor shown above.
+
+### Potentiostat Microfluidic Chip test with Phosphate Buffered Saline and Tobramycin solutions
+The microfluidic chip and potentiostat probably do not work well together. Connect the device and software similar to the dry cell, but instead to the leads on the microfluidic chip.
+
+<table>
+<tr><th>Description</th><th>Image</th></tr>
+<tr><td>PBS Plain Gold Electrodes</td><td><img src='/Images/PBS-Au.png' width='300'></td></tr>
+<tr><td>PBS Gold Electrode after aptamer attachment</td><td><img src='/Images/PBS-Au-Aptamer.png' width='300'></td></tr>
+<tr><td>5uM Tobramycin Gold Electrode after aptamer attachment</td><td><img src='/Images/5-Au-Aptamer.png' width='300'></td></tr>
+</table>
 
 ## License
 
-A short snippet describing the license (MIT, Apache, etc.) you have chosen to use
+Copyright 2017 David Chong and Palani Ganesh Nagappan
 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

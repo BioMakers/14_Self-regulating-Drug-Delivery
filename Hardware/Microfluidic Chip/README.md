@@ -56,7 +56,7 @@ Tobramycin Aptamers (Or any other 3' Methylene Blue Modified and 5' 6 Carbon lin
 NaCl | S7653 | Sigma Aldrich | 
 Tris-EDTA Buffer pH 8.0 | 93283 | Sigma Aldrich | 
 Phosphate Buffered Saline pH 7.2 | 806544 | Sigma Aldrich | 
-Magnesium Chloride Solution 1M | M1028 | Sigma Aldrich | 
+Magnesium Chloride |  | Sigma Aldrich | 
 Tris-(2-carboxyethyl)phosphine hydrochloride solution | 646547 | Sigma Aldrich | 
 Deionised Water |  |  | 
 Printed Gold-leaf Electrode Chip (as described in section above) |  |  | 
@@ -68,14 +68,22 @@ Micropipette |  |  | 1
 Fume cupboard |  |  | 1
 
 ### Method
-1. 
+1. Prepare PBS by dissolving 2.92g NaCl and 0.003g MgCl into 50ml of PBS
+2. Rehydrate aptamers into 200uM concentration with Tris-EDTA Buffer. Follow instructions that come with the aptamer package, yield varies with batch.
+3. Add 1 part (ul) aptamer solution to 2 part (ul) 10mM TCEP solution. (TCEP can be diluted with water)
+4. Allow to stand for 1 hour and observe the blue color of the solution fade to colourless. (If the blue color does not fade, consider adding more TCEP)
+5. Top up to 200 parts (ul) with PBS
+6. Soak gold electrodes in aptamer solution for 2 hours then rinse with water
+7. Immediately cover with 6-mercaptohexanol solution prepared by adding 0.4 ul 6-mercaptohexanol to 1.46 ml of PBS in the fume cupboard.
+8. Wait for 3-5 hours then rinse with water
+9. Store electrodes in PBS.
 
 ## Combining the Layers
 
 ### Materials
 Description | Part Number | Supplier | Quantity
 ----------- | ----------- | -------- | --------
-Overhead Projector Plastic Sheets |  |  | 2 sheets
+Overhead Projector Plastic Sheets or additional glass slides|  |  | 2 sheets
 Wires |  |  | A few cm of wire
 Epoxy |  |  | A little
 Popsicle stick and disposable palte |  |  | 1 plate several popsicle sticks
@@ -97,7 +105,7 @@ Multimeter |  |  | 1
 3. If your wire is thin enough, cut out 3 short pieces and lay them on the stems of the printed electrodes. If your wire is too thick, strip the insulation and pluck out individual wires.
 3. Cut each sheet of thick plastic into half lengthwise.
 4. Mix a small amount of epoxy and layer one edge of each piece of thick plastic (you should have 4 now).
-5. Gently lay the plastic sheets onto the 2 glass sides(the sides with the printed electrodes), ensuring the wires you placed previously still remain ont he electrode stems. Remember to leave a gap in between the plastic sheets on each slide (do not cover the gold electrodes meant for the channel)
+5. Gently lay the plastic sheets/glass slides onto the 2 glass sides(the sides with the printed electrodes), ensuring the wires you placed previously still remain ont he electrode stems. Remember to leave a gap in between the plastic sheets/glass slides on each slide (do not cover the gold electrodes meant for the channel)
 6. Using the 28 gauge syringe needle as a limit, push the two plastic sheets towards each other, ensuring epoxy does not cover the electrode
 7. Press the plastic sheets down firmly and try to squeeze out air pockets. Press extra hard on the areas where the wires are.
 8. When dry, use a multimeter to check for electrical connection between the external part of the wire and the electrode surface.
@@ -107,3 +115,4 @@ Multimeter |  |  | 1
 12. After drying, test if the channel is sealed properly by flushing Phosphate Buffered Saline with red food coloring through the channel.
 
 ![](microfluidicprototype1.jpeg?raw=true)
+![](microfluidicprototype2.jpeg?raw=true)

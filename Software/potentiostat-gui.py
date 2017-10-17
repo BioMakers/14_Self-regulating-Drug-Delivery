@@ -152,7 +152,7 @@ while RUNNING:
             dp = dp.strip()
             datapoints.append(dp.split(" "))
             datapoints[len(datapoints)-1][0] = float(datapoints[len(datapoints)-1][0])
-            datapoints[len(datapoints)-1][1] = float(datapoints[len(datapoints)-1][1])
+            datapoints[len(datapoints)-1][1] = float(datapoints[len(datapoints)-1][1]) * 1000000
             print(dp.split())
 
     #draw
